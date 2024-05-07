@@ -19,7 +19,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await LocalStorage.init();
   await EasyLocalization.ensureInitialized();
-  await rotation(enabled: false);
+
   runApp(
     MultiProvider(
       providers: ConfigProvider.providers,

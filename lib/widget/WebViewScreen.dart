@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:m_health_app/utils/utils.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class WebViewScreen extends StatefulWidget {
@@ -14,7 +12,6 @@ class _WebViewScreenState extends State<WebViewScreen> {
   late WebViewController controller;
   @override
   void initState() {
-    rotation(enabled: true);
     controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(const Color(0x00000000))
